@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="styles.css">
+	<title>Project-1</title>
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container container__header">
+			<div class="header__bloc">
+				<nav class="header__nav">
+					<a class="header__logo--link" href="#">
+						<img class="header__logo" src="images/icon.svg" alt="header__logo">
+					</a>
+				</nav>
+				<h2 class="headre__title">Армія Дронів</h2>
+				<button class=" button header__button" type="button">Зробити внесок</button>
+			</div>
+			<div class="header__img">
+				<img src="images/header_dron.png" alt="header__img">
+			</div>
+		</div>
+	</header>
+
+	<section class="afu">
+		<div class="container">
+			<h3 class="afu__title">Мрієте, щоб ЗСУ стали ще сильніше, а палало аж до москви?</h3>
+			<div class="afu__subtitle">
+				<p>
+					Кожен день наближає Україну до перемоги.
+				</p>
+				<p>
+					Наскільки довгим буде цей шлях – залежить від нас.
+				</p>
+				<p>
+					Допоможіть зібрати кошти на дрони. Хлопці обіцяють – результат вам сподобається! Адже в кожного з нас єдине
+					бажання, щоб зло на нашій землі було знищено. Ваш внесок важливий. Зробіть його просто зараз!
+				</p>
+
+			</div>
+			<div class="afu__gallery">
+				<img src="images/dron_1.jpg" alt="dron_1">
+				<img src="images/dron_2.jpg" alt="dron_2">
+				<img src="images/dron_3.jpg" alt="dron_3">
+			</div>
+		</div>
+	</section>
+
+	<section class="donation">
+		<div class="donation__container">
+			<h3 class="donation__title">Зробити благодійний внесок</h3>
+			<form class="donation__form">
+				<div class="donation__fond">
+					<p class="donation__fond--title">
+						Оберіть фонд
+					</p>
+					<label class="donation__fond-name">
+						<span>Фонд Сергія Притули</span>
+						<input type="radio" name="radio-input" value="SerhiiPritulaFondetion">
+						<span class="radio-castom"></span>
+					</label>
+					<label class="donation__fond-name">
+						<span>Повернись живим</span>
+						<input type="radio" name="radio-input" value="ComeBackAliveFoundation" checked>
+						<span class="radio-castom"></span>
+					</label>
+					<label class="donation__fond-name">
+						<span>Рахунок НБУ</span>
+						<input type="radio" name="radio-input" value="NBUAccount">
+						<span class="radio-castom"></span>
+					</label>
+				</div>
+				<div class="donation__payment">
+					<p class="donation__fond--title">
+						Введіть номер картки*
+					</p>
+					<input type="number" name="num-card" placeholder="XXXX XXXX XXXX XXXX">
+					<div class="donation__payment-addinfo">
+						<div>
+							<p class="donation__fond--title">
+								Термін дії*
+							</p>
+							<input type="number" name="validity" placeholder="XX/XX">
+						</div>
+						<div>
+							<p class="donation__fond--title">
+								CVV
+							</p>
+							<input type="number" name="CVV" placeholder="XXX">
+						</div>
+					</div>
+				</div>
+				<div class="donation__username">
+					<p class="donation__fond--title">
+						Введіть ім'я на картці
+					</p>
+					<input type="text" name="username" placeholder="John Doe">
+					<button class="button donation__username--button" type="submit">
+						Підтвердити внесок
+					</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="footer__container">
+			<p class="footer__text">Створено як навчальний проєкт курсу "Знайомство з IT: тестдрайв професій" від Prometheus.</p>
+			<p class="footer__text">Artur Usatiuk</p>
+
+		</div>
+	</footer>
+
+
+
+
+
+</body>
+
+</html>

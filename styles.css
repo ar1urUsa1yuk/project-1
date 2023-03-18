@@ -1,0 +1,421 @@
+@font-face {
+	font-family: 'Rubik';
+	src: url('/fonts/Rubik-Bold.woff2') format('woff2'),
+		url('/fonts/Rubik-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('/fonts/Rubik-Medium.woff2') format('woff2'),
+		url('/fonts/Rubik-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src: url('/fonts/Rubik-Regular.woff2') format('woff2'),
+		url('/fonts/Rubik-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body,
+* {
+	font-family: "Rubik", sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 90%;
+	padding: 0;
+	margin: 0;
+	color: #212033;
+	box-sizing: border-box;
+	object-fit: cover;
+}
+
+.button:hover{
+	background-color: rgb(42, 114, 185);
+	transition: .5s ease;
+}
+
+.button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}
+
+fieldset {
+	border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+label,
+input {
+	cursor: pointer;
+}
+
+.container {
+	padding: 0 10px;
+	width: 1075px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 580px;
+	background: #E3E6ED;
+	margin-bottom: 80px;
+}
+
+.container__header {
+	display: flex;
+	column-gap: 10px;
+}
+
+.header__bloc {
+	width: 390px;
+}
+
+.header__nav {
+	padding-top: 40px;
+
+}
+
+.headre__title {
+	font-weight: 700;
+	font-size: 80px;
+	letter-spacing: 0.15em;
+	margin-top: 95px;
+	height: 150px;
+}
+
+.header__button {
+	font-weight: 400;
+	font-size: 18px;
+	/* width: 219px; */
+	height: 57px;
+	margin-top: 40px;
+}
+
+.button {
+	padding: 18px 40px;
+
+	color: #fff;
+	background: #12569B;
+	border-radius: 50px;
+}
+
+.header__img {
+	margin-right: 68px;
+}
+
+.header__img img {
+	width: 587px;
+	height: 506px;
+}
+
+.afu {
+	margin-bottom: 80px;
+	position: relative;
+}
+
+.afu::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 63px;
+
+	width: 80%;
+	height: 100px;
+	background-color: #E3E6ED;
+	z-index: -1;
+}
+
+.afu__title {
+	font-weight: 600;
+	font-size: 28px;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.afu__subtitle {
+	max-width: 693px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.afu__subtitle p {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.afu__gallery {
+	display: flex;
+	gap: 10px;
+	width: 100%;
+}
+
+.afu__gallery img {
+	max-width: 345px;
+	max-height: 203px;
+	border-radius: 12px;
+}
+
+.donation {
+	margin-bottom: 44px;
+}
+
+.donation__container {
+	width: 834px;
+	margin: 0 auto;
+}
+
+.donation__title {
+	font-weight: 700;
+	font-size: 56px;
+	line-height: 66px;
+	text-align: center;
+	margin-bottom: 34px;
+}
+
+.donation__fond--title {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	margin-bottom: 10px;
+	color: #000;
+}
+
+.donation__form {
+	display: flex;
+	column-gap: 20px;
+	justify-content: center;
+}
+
+.donation__fond {
+	display: flex;
+	flex-direction: column;
+}
+
+.donation__fond-name {
+	position: relative;
+	width: 280px;
+	height: 43px;
+	text-align: center;
+	line-height: 43px;
+
+	border: 1px solid #12569B;
+	border-radius: 80px;
+}
+
+.donation__fond-name span {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+
+	color: #12569B;
+}
+
+.radio-castom::after {
+	content: url(../images/daw.svg);
+	position: absolute;
+	right: 35px;
+	color: #12569B;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 5;
+
+	opacity: 0;
+}
+
+.donation__fond-name span:first-child {
+	margin-right: 10px;
+}
+
+.donation__fond-name input[type=radio] {
+	width: 0;
+	height: 0;
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+
+.donation__fond-name input[type=radio]~.radio-castom {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 22px;
+	background-color: transparent;
+	padding: 0 24px;
+	cursor: pointer;
+	z-index: -1;
+	transition: all .5s;
+}
+
+.donation__fond-name input[type=radio]:checked~.radio-castom {
+	background-color: #E3E6ED;
+}
+
+.donation__fond-name input[type=radio]:checked+.radio-castom::after {
+	opacity: 1;
+	transition: all .5s;
+}
+
+.donation__fond-name:not(:last-of-type) {
+	margin-bottom: 12px;
+}
+
+input[type=text]:focus {
+	outline: none;
+}
+
+.donation__payment input[type=number]:focus {
+
+	border: 1px solid #12569B;
+	border-radius: 8px;
+	outline: none;
+}
+
+input::-webkit-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+input::-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+input:-moz-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+input:-ms-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+input:focus::-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+input:focus:-moz-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+input:focus:-ms-input-placeholder {
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.donation__payment input[type=number],
+[type=text] {
+	cursor: text;
+	padding: 12px 35px;
+	font-size: 16px;
+}
+
+.donation__payment input[name="num-card"] {
+	width: 251px;
+	height: 43px;
+
+	border: 1px solid #12569B;
+	border-radius: 8px;
+}
+
+::placeholder {
+
+	text-align: center;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+
+	color: #E3E6ED;
+}
+
+.donation__payment-addinfo {
+	display: flex;
+	column-gap: 9px;
+	margin-top: 19px;
+}
+
+.donation__payment-addinfo input[type=number] {
+	width: 121px;
+	height: 43px;
+
+	border: 1px solid #12569B;
+	border-radius: 8px;
+}
+
+.donation__username {
+	display: flex;
+	flex-direction: column;
+}
+
+.donation__username input[type=text] {
+	width: 250px;
+	height: 43px;
+
+	border: 1px solid #12569B;
+	border-radius: 8px;
+
+	margin-bottom: 38px;
+}
+
+.donation__username--button {
+	width: 236px;
+	height: 55px;
+	margin-left: auto;
+}
+
+.footer {
+	width: 100%;
+	height: 178px;
+	background-color: #12569B;
+}
+
+.footer__container {
+	text-align: center;
+}
+
+.footer__text:first-child {
+	padding-top: 65px;
+	margin-bottom: 19px;
+}
+
+.footer__text {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: #ffffff;
+}
